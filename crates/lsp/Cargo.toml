@@ -1,0 +1,13 @@
+[package]
+
+edition.workspace = true
+name              = "lsp"
+version.workspace = true
+
+
+
+
+[[bin]]
+
+name = "lsp"
+path = "source/main.rs"

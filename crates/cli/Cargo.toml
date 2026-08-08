@@ -1,0 +1,13 @@
+[package]
+
+edition.workspace = true
+name              = "cli"
+version.workspace = true
+
+
+
+
+[[bin]]
+
+name = "cli"
+path = "source/main.rs"

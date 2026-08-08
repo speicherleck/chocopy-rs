@@ -1,0 +1,20 @@
+[workspace]
+
+members  = [
+    "crates/cli/",
+    "crates/lsp/"
+]
+resolver = "2"
+
+
+
+
+[workspace.package]
+
+authors    = [
+    "Aleksei Zarekhta <speicherleck@gmail.com>"
+]
+edition    = "2024"
+license    = "MIT"
+repository = "https://github.com/speicherleck/chocopy-rs"
+version    = "1.0.0"
