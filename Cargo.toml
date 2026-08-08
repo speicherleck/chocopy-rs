@@ -1,6 +1,6 @@
 [workspace]
 
-members  = [
+members = [
     "crates/cli/",
     "crates/lsp/"
 ]
@@ -11,11 +11,11 @@ resolver = "2"
 
 [workspace.package]
 
-authors      = [
+authors = [
     "Aleksei Zarekhta <speicherleck@gmail.com>"
 ]
-edition      = "2024"
-license      = "MIT"
-repository   = "https://github.com/speicherleck/chocopy-rs"
+edition = "2024"
+license = "MIT"
+repository = "https://github.com/speicherleck/chocopy-rs"
 rust-version = "1.85"
-version      = "1.0.0"
+version = "1.0.0"
