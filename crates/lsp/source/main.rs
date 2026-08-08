@@ -1,3 +1,5 @@
+use owo_colors::OwoColorize;
+
 fn main() {
-    println!("Hello, world!")
+    println!("{}, {}!", "Hello".red().bold(), "world".red().bold());
 }

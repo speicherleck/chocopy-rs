@@ -1,3 +1,10 @@
+[dependencies]
+
+owo-colors = "4.3.0"
+
+
+
+
 [package]
 
 edition.workspace = true
