@@ -24,6 +24,21 @@ cog verify --file $1
 
 
 
+[git_hooks.pre-commit]
+
+script = """
+#!/bin/sh
+
+set -e
+
+taplo fmt --check
+
+cargo fmt --all --check
+"""
+
+
+
+
 [git_hooks.pre-push]
 
 script = """

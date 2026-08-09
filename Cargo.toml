@@ -2,7 +2,8 @@
 
 members = [
     "crates/cli/",
-    "crates/lsp/"
+    "crates/lsp/",
+    "crates/vfs/"
 ]
 resolver = "2"
 

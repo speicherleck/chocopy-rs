@@ -1,0 +1,13 @@
+[lib]
+
+name = "vfs"
+path = "source/lib.rs"
+
+
+
+
+[package]
+
+edition.workspace = true
+name              = "vfs"
+version.workspace = true
