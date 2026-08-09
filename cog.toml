@@ -31,9 +31,9 @@ script = """
 
 set -e
 
-taplo fmt --check
-
 cargo fmt --all --check
+
+taplo fmt --check
 """
 
 
@@ -45,6 +45,10 @@ script = """
 #!/bin/sh
 
 set -e
+
+cargo clippy --all-features --all-targets --workspace -- -D warnings
+
+cargo test --all-features --all-targets --workspace
 
 cog check
 """
