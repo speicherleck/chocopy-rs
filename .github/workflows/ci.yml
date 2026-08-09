@@ -21,6 +21,15 @@ jobs:
           tool: cargo-binstall
       - run: cargo binstall cocogitto --no-confirm
       - run: cog check
+  coverage:
+    name: Coverage
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-llvm-cov
+      - run: cargo llvm-cov --all-features --fail-under-lines 100 --workspace
   format:
     name: Format
     runs-on: ubuntu-latest

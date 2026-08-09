@@ -1,3 +1,10 @@
+[dev-dependencies]
+
+proptest = "1.11.0"
+
+
+
+
 [lib]
 
 name = "vfs"
