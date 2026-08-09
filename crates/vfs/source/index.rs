@@ -95,5 +95,12 @@ mod tests {
 
             prop_assert_eq!(start + column, offset);
         }
+
+        #[test]
+        fn validity(text in text_set()) {
+            let index = Index::new(&text);
+
+            prop_assert_eq!(index.offsets.len(), text.matches('\n').count() + 1);
+        }
     }
 }
