@@ -14,7 +14,7 @@ impl Index {
             offsets.push((i + 1) as u32);
         }
 
-        Self { offsets: offsets }
+        Self { offsets }
     }
 
     pub fn size(&self) -> u32 {
